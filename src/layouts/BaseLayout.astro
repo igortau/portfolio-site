@@ -9,15 +9,28 @@ const { title = "Игорь" } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
+
+    <link rel="icon" type="image/svg+xml" href="/portfolio-site/favicon.svg" />
   </head>
 
   <body class="min-h-screen bg-slate-950 text-slate-100">
     <main class="mx-auto max-w-4xl px-6 py-10">
       <nav class="mb-20 flex flex-wrap gap-6 text-lg">
-        <a class="text-sky-400 hover:text-sky-300" href="/">Главная</a>
-        <a class="text-sky-400 hover:text-sky-300" href="/about">Обо мне</a>
-        <a class="text-sky-400 hover:text-sky-300" href="/projects">Проекты</a>
-        <a class="text-sky-400 hover:text-sky-300" href="/posts">Заметки</a>
+        <a class="text-sky-400 hover:text-sky-300" href="/portfolio-site/">
+          Главная
+        </a>
+
+        <a class="text-sky-400 hover:text-sky-300" href="/portfolio-site/about">
+          Обо мне
+        </a>
+
+        <a class="text-sky-400 hover:text-sky-300" href="/portfolio-site/projects">
+          Проекты
+        </a>
+
+        <a class="text-sky-400 hover:text-sky-300" href="/portfolio-site/posts">
+          Заметки
+        </a>
       </nav>
 
       <section class="prose prose-invert max-w-none">
