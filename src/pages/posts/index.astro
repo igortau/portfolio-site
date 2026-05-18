@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Игорь — Системный аналитик">
+  <section class="space-y-10">
+    <div>
+      <p class="mb-4 text-sm uppercase tracking-widest text-sky-400">
+        Portfolio / System Analysis / AI
+      </p>
+
+      <h1 class="mb-6 text-5xl font-bold tracking-tight text-slate-100">
+        Игорь — системный аналитик
+      </h1>
+
+      <p class="max-w-3xl text-xl leading-8 text-slate-300">
+        Проектирую требования, интеграции, API, модели данных и backend-процессы.
+        Работаю на стыке системного анализа, баз данных, legacy replacement и AI/LLM.
+      </p>
+    </div>
+
+    <div class="grid gap-4 md:grid-cols-3">
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+        <h2 class="mb-3 text-xl font-semibold text-slate-100">Интеграции</h2>
+        <p class="text-slate-400">
+          REST API, Kafka, контракты, sequence diagrams, взаимодействие сервисов.
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+        <h2 class="mb-3 text-xl font-semibold text-slate-100">Данные</h2>
+        <p class="text-slate-400">
+          PostgreSQL, ERD, НСИ, правила выбора данных, миграция legacy-моделей.
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+        <h2 class="mb-3 text-xl font-semibold text-slate-100">AI / LLM</h2>
+        <p class="text-slate-400">
+          Ollama, OpenWebUI, RAG, pgvector, AI-агенты и семантический поиск.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

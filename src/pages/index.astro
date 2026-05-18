@@ -1,17 +1,124 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Игорь — Системный аналитик">
+  <section class="relative space-y-10">
+   <div class="absolute inset-0 -z-10 overflow-hidden">
+    <div class="absolute left-1/3 top-20 h-72 w-72 rounded-full bg-sky-500/10 blur-3xl"></div>
+
+    <div class="absolute right-1/4 top-96 h-96 w-96 rounded-full bg-cyan-400/10 blur-3xl"></div>
+</div>
+    <div>
+      <p class="mb-4 text-sm uppercase tracking-widest text-sky-400">
+        Portfolio / System Analysis / AI
+      </p>
+
+      <h1 class="mb-6 text-5xl font-bold tracking-tight text-slate-100">
+        Игорь — системный аналитик
+      </h1>
+
+      <p class="max-w-3xl text-xl leading-8 text-slate-300">
+        Проектирую требования, интеграции, API, модели данных и backend-процессы.
+        Работаю на стыке системного анализа, баз данных, legacy replacement и AI/LLM.
+      </p>
+    </div>
+
+<div class="mt-8 flex flex-wrap gap-4">
+  <a
+    href="https://github.com/igortau"
+    target="_blank"
+	rel="noopener noreferrer"
+    class="rounded-xl border border-slate-700 px-5 py-3 text-slate-200 transition hover:border-sky-500 hover:bg-slate-900"
+  >
+    GitHub
+  </a>
+
+  <a
+    href="https://hh.ru/resume/be4bbe13ff061127440039ed1f426245417655"
+    target="_blank"
+	rel="noopener noreferrer"
+    class="rounded-xl border border-slate-700 px-5 py-3 text-slate-200 transition hover:border-sky-500 hover:bg-slate-900"
+  >
+    HH.ru
+  </a>
+
+  <a
+    href="https://t.me/igortaurg"
+    target="_blank"
+	rel="noopener noreferrer"
+    class="rounded-xl border border-slate-700 px-5 py-3 text-slate-200 transition hover:border-sky-500 hover:bg-slate-900"
+  >
+    Telegram
+  </a>
+</div>
+
+<div class="grid gap-4 md:grid-cols-3">
+  <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:-translate-y-1 hover:border-sky-700 hover:bg-slate-800/80 hover:shadow-2xl hover:shadow-sky-950">
+    <h2 class="mb-3 text-xl font-semibold text-slate-100">Интеграции</h2>
+    <p class="text-slate-400">
+      REST API, Kafka, контракты, sequence diagrams, взаимодействие сервисов.
+    </p>
+  </div>
+
+  <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:-translate-y-1 hover:border-sky-700 hover:bg-slate-800/80 hover:shadow-2xl hover:shadow-sky-950">
+    <h2 class="mb-3 text-xl font-semibold text-slate-100">Данные</h2>
+    <p class="text-slate-400">
+      PostgreSQL, ERD, НСИ, правила выбора данных, миграция legacy-моделей.
+    </p>
+  </div>
+
+  <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 transition hover:-translate-y-1 hover:border-sky-700 hover:bg-slate-800/80 hover:shadow-2xl hover:shadow-sky-950">
+    <h2 class="mb-3 text-xl font-semibold text-slate-100">AI / LLM</h2>
+    <p class="text-slate-400">
+      Ollama, OpenWebUI, RAG, pgvector, AI-агенты и семантический поиск.
+    </p>
+  </div>
+</div>
+
+<div class="pt-10">
+  <h2 class="mb-6 text-2xl font-bold text-slate-100">
+    Tech Stack
+  </h2>
+
+  <div class="flex flex-wrap gap-3">
+    <span class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300">
+  PostgreSQL
+</span>
+
+<span class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300">
+  REST API
+</span>
+
+<span class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300">
+  Kafka
+</span>
+
+<span class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300">
+  Docker
+</span>
+
+<span class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300">
+  BPMN
+</span>
+
+<span class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300">
+  UML
+</span>
+
+<span class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300">
+  Ollama
+</span>
+
+<span class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300">
+  RAG
+</span>
+
+<span class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300">
+  pgvector
+</span>
+  </div>
+</div>
+
+  </section>
+</BaseLayout>

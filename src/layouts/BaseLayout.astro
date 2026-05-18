@@ -1,0 +1,34 @@
+---
+import "../styles/global.css";
+
+const { title = "Игорь" } = Astro.props;
+---
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <main class="mx-auto max-w-4xl px-6 py-10">
+      <nav class="mb-20 flex flex-wrap gap-6 text-lg">
+        <a class="text-sky-400 hover:text-sky-300" href="/">Главная</a>
+        <a class="text-sky-400 hover:text-sky-300" href="/about">Обо мне</a>
+        <a class="text-sky-400 hover:text-sky-300" href="/projects">Проекты</a>
+        <a class="text-sky-400 hover:text-sky-300" href="/posts">Заметки</a>
+      </nav>
+
+      <section class="prose prose-invert max-w-none">
+        <slot />
+      </section>
+
+      <footer class="mt-24 border-t border-slate-800 pt-8 text-sm text-slate-500">
+        <p>
+          © 2026 Игорь · System Analyst · PostgreSQL · AI · Integrations
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
